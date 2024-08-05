@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/style.scss" />
+    <link rel="stylesheet" href="../scss/Createpost.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <section class="headerTitle-container">
+        <h1 class="headerTitle">Data Leaker Gates
+        </h1>
+      </section>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="">Agregar Post</a></li>
+          <li><button id="logout-button">Log out</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="addPost-main">
+      <h2 class="addPost-title">Agregar Post</h2>
+
+      <section class="form-container">
+        <form id="addPost-form" action="">
+            <input type="text"
+            class="addPost-title"
+            id="title-post"
+            placeholder="Titulo"
+            >
+            <input type="text"
+            class="addPlat-input"
+            id="new-Plat"
+            placeholder="Plataforma"
+            >
+          <input
+            type="text"
+            class="addPost-input"
+            id="new-Post"
+            placeholder="Fecha de creacion"
+          />
+          <input
+            type="text"
+            class="addPost-input"
+            id="new-postcreate"
+            placeholder="Fecha estimada publicacion"
+          />
+          <input
+            type="text"
+            class="addPost-input"
+            id="new-postpercentaje"
+            placeholder="Porcentaje de calidad"
+          />
+          <div class="button-container">
+            <button type="submit" class="addPost-button">Agregar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="../Controller/Createpost.ts"></script>
+  </body>
+</html>
